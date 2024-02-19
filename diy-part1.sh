@@ -21,3 +21,4 @@
 #echo 'src-git small8 https://github.com/kenzok8/small-package' >>feeds.conf.default
 #echo 'src-git zerotier https://github.com/mwarning/zerotier-openwrt.git' >>feeds.conf.default
 echo 'src-git adguardhome https://github.com/rufengsuixing/luci-app-adguardhome' >>feeds.conf.default
+git clone https://github.com/sbwml/luci-app-mosdns package/openwrt-mos && mv -n package/openwrt-mos/{*mosdns,v2dat} package/; rm -rf package/openwrt-mos
